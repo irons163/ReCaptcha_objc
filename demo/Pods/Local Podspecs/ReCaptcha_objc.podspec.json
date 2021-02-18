@@ -14,12 +14,6 @@
     "git": "https://github.com/irons163/ReCaptcha_objc.git",
     "tag": "1.6.0"
   },
-  "pod_target_xcconfig": {
-    "OTHER_LDFLAGS": "$(inherited) -ObjC"
-  },
-  "xcconfig": {
-    "SWIFT_INCLUDE_PATHS": "$(PODS_TARGET_SRCROOT)/Sources/ReCaptcha_objc"
-  },
   "platforms": {
     "ios": "9.0"
   },

@@ -1,3 +1,18 @@
-PODFILE CHECKSUM: 2029a37525523521656fa1f87704f84455faba10
+PODS:
+  - ReCaptcha_objc (1.6.0):
+    - ReCaptcha_objc/Core (= 1.6.0)
+  - ReCaptcha_objc/Core (1.6.0)
+
+DEPENDENCIES:
+  - ReCaptcha_objc (from `../ReCaptcha_objc.podspec`)
+
+EXTERNAL SOURCES:
+  ReCaptcha_objc:
+    :path: "../ReCaptcha_objc.podspec"
+
+SPEC CHECKSUMS:
+  ReCaptcha_objc: 58fe445610527259d435ff90e440736cda8eb390
+
+PODFILE CHECKSUM: 97be2fab2d59fbba12341a098aa21e623ea07cff
 
 COCOAPODS: 1.10.0

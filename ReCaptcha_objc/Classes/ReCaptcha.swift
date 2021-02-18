@@ -81,7 +81,7 @@ public class ReCaptcha: NSObject {
         private static let bundle: Bundle = {
             let bundle = Bundle(for: ReCaptcha.self)
             guard let cocoapodsBundle = bundle
-                .path(forResource: "ReCaptcha", ofType: "bundle")
+                .path(forResource: "ReCaptcha_objc", ofType: "bundle")
                 .flatMap(Bundle.init(path:)) else {
                     return bundle
             }

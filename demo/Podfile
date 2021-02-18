@@ -6,5 +6,7 @@ target 'demo' do
   use_frameworks!
 
   # Pods for demo
-#  pod 'ReCaptcha_objc', :path => '../ReCaptcha_objc.podspec'
+  # Development Pods
+  pod 'ReCaptcha_objc', :path => '../ReCaptcha_objc.podspec'
+#  pod 'ReCaptcha_objc'
 end

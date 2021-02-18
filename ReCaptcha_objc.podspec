@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ReCaptcha_objc'
-  s.version          = '1.6.0'
+  s.version          = '1.6.1'
   s.summary          = 'ReCaptcha for iOS'
   s.swift_version    = '5.0'
   

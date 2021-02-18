@@ -8,10 +8,6 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 @import ReCaptcha_objc;
-//#import <ReCaptcha-Swift.h>
-//#import <ReCaptcha-umbrella.h>
-//#import <ReCaptcha/ReCaptcha-Swift.h>
-//#import <ReCaptcha/ReCaptcha-umbrella.h>
 
 #define webViewTag 1
 #define testLabelTag 2
@@ -22,7 +18,6 @@
 
 @implementation ViewController {
     ReCaptcha *recaptcha;
-//    DisposeBag *d;
     UILabel *label;
     WKWebView *webview;
 }
@@ -40,16 +35,10 @@
 
         // For testing purposes
         // If the webview requires presentation, this should work as a way of detecting the webview in UI tests
-//        self?.view.viewWithTag(Constants.testLabelTag)?.removeFromSuperview()
-//        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
         self->label = [[UILabel alloc] initWithFrame:self.view.bounds];
         self->label.numberOfLines = 0;
         self->label.tag = testLabelTag;
-//        self->label.accessibilityLabel = @"webview";
-//        self?.view.addSubview(label)
         [self.view addSubview:self->label];
-        
-       
     }];
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -59,7 +48,6 @@
             NSLog(@"Result:%@", result);
         }];
     });
-    
 }
 
 

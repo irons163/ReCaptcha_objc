@@ -7,103 +7,241 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		415EBEF9E5B44A0931CD3D7633ABB5F4 /* Pods-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 455821B07F5956A53899E4D7488B8B96 /* Pods-demo-dummy.m */; };
-		E79818A0D57805166EA9CFDF0A85690B /* Pods-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A17AC547E5EEB4D08DC01378F4984B4A /* Pods-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E85488DA09987CFFD82BA35D116BD849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		04E8F6F2CA49290DB494879D4BB26241 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */; };
+		261D7C3D98F2F8A33ACD10FBE233421D /* recaptcha.html in Resources */ = {isa = PBXBuildFile; fileRef = 6CB97C37BD1050A9D42145C1CA90EC91 /* recaptcha.html */; };
+		2B10D23ECBB2BBAAAF9D694EF414EF86 /* ReCaptcha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312FC11D859426B71918F1787D155324 /* ReCaptcha.swift */; };
+		467F8B15AC017D7D576CD9336E2D36C1 /* ReCaptchaDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4A401A19A307482E481984211C235 /* ReCaptchaDecoder.swift */; };
+		46EFE78B1EFB8296848C43D9C9D76068 /* DispatchQueue+Throttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D14C5D5CF2405BEE7D3E686FA952AC4 /* DispatchQueue+Throttle.swift */; };
+		4BF16612BED1EC4558D57A39B5B7FEC4 /* ReCaptcha_objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FDFFACCF3BA47E16DA86D8C44F9E42 /* ReCaptcha_objc-dummy.m */; };
+		5A5A52690FC51FB603D42BDDB9248988 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */; };
+		6DBC5BFC46AB3730A6A70D695FC5D7A6 /* Pods-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DC5ABE867DFAFEEFE65EB904EC044 /* Pods-demo-dummy.m */; };
+		741EA2791201EE834829549F14688BDE /* String+Dict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662E6697B4D146EDAFED38ED4DBB804 /* String+Dict.swift */; };
+		7DE2BE0ED3AEA559DA9FDAB4D0FE0969 /* ReCaptchaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506AF041E3FD4A94469C4D1FC7EC991E /* ReCaptchaError.swift */; };
+		804D145E6D3EC434570CFBC565B5FC87 /* ReCaptchaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95387B7B780D35D444DDB69214C84474 /* ReCaptchaResult.swift */; };
+		88AEF9FEC0E9392B54F388787B39372E /* ReCaptchaWebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E96E74E944C61557956C7A16E708B /* ReCaptchaWebViewManager.swift */; };
+		9E6D79F14E2734B83CF944D5AA6DDB61 /* ReCaptcha_objc.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 20F7EE75DCE1C33D081B1592E871D4BC /* ReCaptcha_objc.bundle */; };
+		AED32D3A1DD12BDB00DD78A552F5D937 /* Pods-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 919022BC48F9439E29669B27B83A8482 /* Pods-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D44772A8478CEBC004B2A47C7BCFAA8F /* ReCaptcha_objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8033778B254FCFC315FE6C14A39227AA /* ReCaptcha_objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F36CD0261384585979766E0904742007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A0A2A13D74A16F6391321B8BFB7EA0BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DCF4BBEABE6619A135A34DFE82BDC3;
+			remoteInfo = "ReCaptcha_objc-ReCaptcha_objc";
+		};
+		CB498D0B55E256D13FD5A41B124E0B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DDECA165B57F3C5B8A2C1E7783A9ACC;
+			remoteInfo = ReCaptcha_objc;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		2D910C2571C7F5236190094652A691EA /* Pods-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-demo.release.xcconfig"; sourceTree = "<group>"; };
-		455821B07F5956A53899E4D7488B8B96 /* Pods-demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-demo-dummy.m"; sourceTree = "<group>"; };
+		056C11651D9181CFD60992F50710A1E6 /* Pods-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-demo.release.xcconfig"; sourceTree = "<group>"; };
+		171784CD7F89555EFD77B2A0479363CA /* Pods-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-demo-Info.plist"; sourceTree = "<group>"; };
+		1E7C942AF007EB82AD0DB6E8F9079F91 /* ReCaptcha_objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReCaptcha_objc.framework; path = ReCaptcha_objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F7EE75DCE1C33D081B1592E871D4BC /* ReCaptcha_objc.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ReCaptcha_objc.bundle; path = "ReCaptcha_objc-ReCaptcha_objc.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		312FC11D859426B71918F1787D155324 /* ReCaptcha.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReCaptcha.swift; path = ReCaptcha_objc/Classes/ReCaptcha.swift; sourceTree = "<group>"; };
+		32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3999113EF833AC6C19A30BA0C5F29E32 /* ReCaptcha_objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReCaptcha_objc.modulemap; sourceTree = "<group>"; };
+		3D32FE4E2EF0D36836D636E628769162 /* ReCaptcha_objc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ReCaptcha_objc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4FE45AE5DAA8B1DF7D6099181AD9FA0A /* Pods-demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		506AF041E3FD4A94469C4D1FC7EC991E /* ReCaptchaError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReCaptchaError.swift; path = ReCaptcha_objc/Classes/ReCaptchaError.swift; sourceTree = "<group>"; };
+		5662E6697B4D146EDAFED38ED4DBB804 /* String+Dict.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Dict.swift"; path = "ReCaptcha_objc/Classes/String+Dict.swift"; sourceTree = "<group>"; };
+		57FDFFACCF3BA47E16DA86D8C44F9E42 /* ReCaptcha_objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReCaptcha_objc-dummy.m"; sourceTree = "<group>"; };
+		5D14C5D5CF2405BEE7D3E686FA952AC4 /* DispatchQueue+Throttle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Throttle.swift"; path = "ReCaptcha_objc/Classes/DispatchQueue+Throttle.swift"; sourceTree = "<group>"; };
 		620C2E500E91AE09F121C9670613B82F /* Pods_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_demo.framework; path = "Pods-demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66E94DC8888AEDE4D7268B801B838486 /* Pods-demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D4C1335D935C42FC7C48FB3A3ACDD1E /* Pods-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-demo.modulemap"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7AD2B169B8706766D1FCFF8268346190 /* Pods-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		64059F3AF1ECBB03D85836ABBCA2C7EC /* ReCaptcha_objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReCaptcha_objc-Info.plist"; sourceTree = "<group>"; };
+		6CB97C37BD1050A9D42145C1CA90EC91 /* recaptcha.html */ = {isa = PBXFileReference; includeInIndex = 1; name = recaptcha.html; path = ReCaptcha_objc/Assets/recaptcha.html; sourceTree = "<group>"; };
+		7AE4A401A19A307482E481984211C235 /* ReCaptchaDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReCaptchaDecoder.swift; path = ReCaptcha_objc/Classes/ReCaptchaDecoder.swift; sourceTree = "<group>"; };
+		7C5DC5ABE867DFAFEEFE65EB904EC044 /* Pods-demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-demo-dummy.m"; sourceTree = "<group>"; };
+		8033778B254FCFC315FE6C14A39227AA /* ReCaptcha_objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReCaptcha_objc-umbrella.h"; sourceTree = "<group>"; };
+		8304FA02D2A592F4996BA412884CCA37 /* Pods-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-demo.modulemap"; sourceTree = "<group>"; };
+		919022BC48F9439E29669B27B83A8482 /* Pods-demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-demo-umbrella.h"; sourceTree = "<group>"; };
+		95387B7B780D35D444DDB69214C84474 /* ReCaptchaResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReCaptchaResult.swift; path = ReCaptcha_objc/Classes/ReCaptchaResult.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A17AC547E5EEB4D08DC01378F4984B4A /* Pods-demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-demo-umbrella.h"; sourceTree = "<group>"; };
-		AAB6479715803A273BD7BF028027766B /* Pods-demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		D17FE76ABF839ECAF004D697E864EFE0 /* Pods-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-demo-Info.plist"; sourceTree = "<group>"; };
+		AA6F28936150B774D174F70EC133595F /* Pods-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0FE056A4D62357ADF7BBB3D29B2E52 /* Pods-demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-demo-frameworks.sh"; sourceTree = "<group>"; };
+		B04A0B20F8C911B8B26EBE56735D8FD0 /* ReCaptcha_objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReCaptcha_objc.debug.xcconfig; sourceTree = "<group>"; };
+		BCC22BCBBD200BCCEA11E1BDACD6D72A /* ResourceBundle-ReCaptcha_objc-ReCaptcha_objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ReCaptcha_objc-ReCaptcha_objc-Info.plist"; sourceTree = "<group>"; };
+		CC3E96E74E944C61557956C7A16E708B /* ReCaptchaWebViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReCaptchaWebViewManager.swift; path = ReCaptcha_objc/Classes/ReCaptchaWebViewManager.swift; sourceTree = "<group>"; };
+		DA9E35868A6BB749F048C744401F16D2 /* ReCaptcha_objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReCaptcha_objc.release.xcconfig; sourceTree = "<group>"; };
+		EA96317F8DBE2C7048B863DEF1B67E14 /* Pods-demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC346672CF82EDF0EF749F397E936236 /* ReCaptcha_objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReCaptcha_objc-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C8B277A95170EF190E4E8B3E6A35EA9B /* Frameworks */ = {
+		8615F1FC14288939E3C19B2C0B160EFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85488DA09987CFFD82BA35D116BD849 /* Foundation.framework in Frameworks */,
+				F36CD0261384585979766E0904742007 /* Foundation.framework in Frameworks */,
+				04E8F6F2CA49290DB494879D4BB26241 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BF85BBAB8D1FCFBE3E78B24570F10FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5A52690FC51FB603D42BDDB9248988 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA125F8CDF2E3A507B114DBD8DAAC958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		231BD445CAA851B482C20F127015D9EF /* Targets Support Files */ = {
+		00790AC00FC4B611E4F1F5104257927F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F11EE272B69CF6268B3A604D73415415 /* Pods-demo */,
+				3D32FE4E2EF0D36836D636E628769162 /* ReCaptcha_objc.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0D792BA98A7D3E655FDEA3E82FCCE224 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				620C2E500E91AE09F121C9670613B82F /* Pods_demo.framework */,
+				20F7EE75DCE1C33D081B1592E871D4BC /* ReCaptcha_objc.bundle */,
+				1E7C942AF007EB82AD0DB6E8F9079F91 /* ReCaptcha_objc.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4666CE1A84ECF5C342FAD3C508C69DE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D9CA76B34FCE10C993972984E66B30A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5D14C5D5CF2405BEE7D3E686FA952AC4 /* DispatchQueue+Throttle.swift */,
+				6CB97C37BD1050A9D42145C1CA90EC91 /* recaptcha.html */,
+				312FC11D859426B71918F1787D155324 /* ReCaptcha.swift */,
+				7AE4A401A19A307482E481984211C235 /* ReCaptchaDecoder.swift */,
+				506AF041E3FD4A94469C4D1FC7EC991E /* ReCaptchaError.swift */,
+				95387B7B780D35D444DDB69214C84474 /* ReCaptchaResult.swift */,
+				CC3E96E74E944C61557956C7A16E708B /* ReCaptchaWebViewManager.swift */,
+				5662E6697B4D146EDAFED38ED4DBB804 /* String+Dict.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		8409A7349DF0DD2BCBC60DA122608728 /* ReCaptcha_objc */ = {
+			isa = PBXGroup;
+			children = (
+				1D9CA76B34FCE10C993972984E66B30A /* Core */,
+				00790AC00FC4B611E4F1F5104257927F /* Pod */,
+				A303A7612EF9A4B5ECD2B81591E4F43C /* Support Files */,
+			);
+			name = ReCaptcha_objc;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A303A7612EF9A4B5ECD2B81591E4F43C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3999113EF833AC6C19A30BA0C5F29E32 /* ReCaptcha_objc.modulemap */,
+				57FDFFACCF3BA47E16DA86D8C44F9E42 /* ReCaptcha_objc-dummy.m */,
+				64059F3AF1ECBB03D85836ABBCA2C7EC /* ReCaptcha_objc-Info.plist */,
+				EC346672CF82EDF0EF749F397E936236 /* ReCaptcha_objc-prefix.pch */,
+				8033778B254FCFC315FE6C14A39227AA /* ReCaptcha_objc-umbrella.h */,
+				B04A0B20F8C911B8B26EBE56735D8FD0 /* ReCaptcha_objc.debug.xcconfig */,
+				DA9E35868A6BB749F048C744401F16D2 /* ReCaptcha_objc.release.xcconfig */,
+				BCC22BCBBD200BCCEA11E1BDACD6D72A /* ResourceBundle-ReCaptcha_objc-ReCaptcha_objc-Info.plist */,
+			);
+			name = "Support Files";
+			path = "demo/Pods/Target Support Files/ReCaptcha_objc";
+			sourceTree = "<group>";
+		};
+		A93195AB5748F7569134F397E2674D09 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBA4AB0AD989728D60465BDAA2076BA2 /* Pods-demo */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		CBA4AB0AD989728D60465BDAA2076BA2 /* Pods-demo */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				8304FA02D2A592F4996BA412884CCA37 /* Pods-demo.modulemap */,
+				4FE45AE5DAA8B1DF7D6099181AD9FA0A /* Pods-demo-acknowledgements.markdown */,
+				EA96317F8DBE2C7048B863DEF1B67E14 /* Pods-demo-acknowledgements.plist */,
+				7C5DC5ABE867DFAFEEFE65EB904EC044 /* Pods-demo-dummy.m */,
+				AD0FE056A4D62357ADF7BBB3D29B2E52 /* Pods-demo-frameworks.sh */,
+				171784CD7F89555EFD77B2A0479363CA /* Pods-demo-Info.plist */,
+				919022BC48F9439E29669B27B83A8482 /* Pods-demo-umbrella.h */,
+				AA6F28936150B774D174F70EC133595F /* Pods-demo.debug.xcconfig */,
+				056C11651D9181CFD60992F50710A1E6 /* Pods-demo.release.xcconfig */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		60A89E6E7FD3B4020FC7D31E0FEE8724 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				620C2E500E91AE09F121C9670613B82F /* Pods_demo.framework */,
-			);
-			name = Products;
+			name = "Pods-demo";
+			path = "Target Support Files/Pods-demo";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				60A89E6E7FD3B4020FC7D31E0FEE8724 /* Products */,
-				231BD445CAA851B482C20F127015D9EF /* Targets Support Files */,
+				D774EB59D645E110F937F4931DC0C9E1 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				0D792BA98A7D3E655FDEA3E82FCCE224 /* Products */,
+				A93195AB5748F7569134F397E2674D09 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D4666CE1A84ECF5C342FAD3C508C69DE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */,
+				2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		F11EE272B69CF6268B3A604D73415415 /* Pods-demo */ = {
+		D774EB59D645E110F937F4931DC0C9E1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6D4C1335D935C42FC7C48FB3A3ACDD1E /* Pods-demo.modulemap */,
-				66E94DC8888AEDE4D7268B801B838486 /* Pods-demo-acknowledgements.markdown */,
-				AAB6479715803A273BD7BF028027766B /* Pods-demo-acknowledgements.plist */,
-				455821B07F5956A53899E4D7488B8B96 /* Pods-demo-dummy.m */,
-				D17FE76ABF839ECAF004D697E864EFE0 /* Pods-demo-Info.plist */,
-				A17AC547E5EEB4D08DC01378F4984B4A /* Pods-demo-umbrella.h */,
-				7AD2B169B8706766D1FCFF8268346190 /* Pods-demo.debug.xcconfig */,
-				2D910C2571C7F5236190094652A691EA /* Pods-demo.release.xcconfig */,
+				8409A7349DF0DD2BCBC60DA122608728 /* ReCaptcha_objc */,
 			);
-			name = "Pods-demo";
-			path = "Target Support Files/Pods-demo";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		04A84C7F22D8246C9FBBBB4D022D70B1 /* Headers */ = {
+		37D1F7020678B40042C391571D33FCE1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E79818A0D57805166EA9CFDF0A85690B /* Pods-demo-umbrella.h in Headers */,
+				D44772A8478CEBC004B2A47C7BCFAA8F /* ReCaptcha_objc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99AC7B760D8923D3360A33C54E38916A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED32D3A1DD12BDB00DD78A552F5D937 /* Pods-demo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,21 +250,58 @@
 /* Begin PBXNativeTarget section */
 		06211BFED24C96E7ADA9B774FAC62F28 /* Pods-demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2236CD4C789E0BD24E613CD5B9C07C9E /* Build configuration list for PBXNativeTarget "Pods-demo" */;
+			buildConfigurationList = CA9019CF26817DE8D1431CAF8B960B71 /* Build configuration list for PBXNativeTarget "Pods-demo" */;
 			buildPhases = (
-				04A84C7F22D8246C9FBBBB4D022D70B1 /* Headers */,
-				29CDB5D51B3486E73159ACA6814102F0 /* Sources */,
-				C8B277A95170EF190E4E8B3E6A35EA9B /* Frameworks */,
-				2EBC9E18A39E2B5EBB40BC6366A2EF65 /* Resources */,
+				99AC7B760D8923D3360A33C54E38916A /* Headers */,
+				BAE9FFC79B24588A48714630E91CF81A /* Sources */,
+				8BF85BBAB8D1FCFBE3E78B24570F10FA /* Frameworks */,
+				E0BD4D7B610CE393643EAD2678657746 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A01DDCE77EBC2E6D096B3DE1E5AF6122 /* PBXTargetDependency */,
 			);
 			name = "Pods-demo";
 			productName = "Pods-demo";
 			productReference = 620C2E500E91AE09F121C9670613B82F /* Pods_demo.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		5DDECA165B57F3C5B8A2C1E7783A9ACC /* ReCaptcha_objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA681EF541A28D0F3AF9C280EE5A6325 /* Build configuration list for PBXNativeTarget "ReCaptcha_objc" */;
+			buildPhases = (
+				37D1F7020678B40042C391571D33FCE1 /* Headers */,
+				296DAA348E593099ED80537AE6645B34 /* Sources */,
+				8615F1FC14288939E3C19B2C0B160EFC /* Frameworks */,
+				16DEA5BA001CBF5DBEA89DF38AD7C21D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C83CE808350442415226EC10CE051C6D /* PBXTargetDependency */,
+			);
+			name = ReCaptcha_objc;
+			productName = ReCaptcha_objc;
+			productReference = 1E7C942AF007EB82AD0DB6E8F9079F91 /* ReCaptcha_objc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84DCF4BBEABE6619A135A34DFE82BDC3 /* ReCaptcha_objc-ReCaptcha_objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7C30685F48FCD88B1CE221880CDFB4 /* Build configuration list for PBXNativeTarget "ReCaptcha_objc-ReCaptcha_objc" */;
+			buildPhases = (
+				216B25323DBBA03B81D5A21432ABEDC9 /* Sources */,
+				DA125F8CDF2E3A507B114DBD8DAAC958 /* Frameworks */,
+				5D9BB954D03A6915B51FA285A0D8AD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReCaptcha_objc-ReCaptcha_objc";
+			productName = "ReCaptcha_objc-ReCaptcha_objc";
+			productReference = 20F7EE75DCE1C33D081B1592E871D4BC /* ReCaptcha_objc.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -146,17 +321,35 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 60A89E6E7FD3B4020FC7D31E0FEE8724 /* Products */;
+			productRefGroup = 0D792BA98A7D3E655FDEA3E82FCCE224 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				06211BFED24C96E7ADA9B774FAC62F28 /* Pods-demo */,
+				5DDECA165B57F3C5B8A2C1E7783A9ACC /* ReCaptcha_objc */,
+				84DCF4BBEABE6619A135A34DFE82BDC3 /* ReCaptcha_objc-ReCaptcha_objc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2EBC9E18A39E2B5EBB40BC6366A2EF65 /* Resources */ = {
+		16DEA5BA001CBF5DBEA89DF38AD7C21D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6D79F14E2734B83CF944D5AA6DDB61 /* ReCaptcha_objc.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9BB954D03A6915B51FA285A0D8AD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261D7C3D98F2F8A33ACD10FBE233421D /* recaptcha.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BD4D7B610CE393643EAD2678657746 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,15 +359,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		29CDB5D51B3486E73159ACA6814102F0 /* Sources */ = {
+		216B25323DBBA03B81D5A21432ABEDC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				415EBEF9E5B44A0931CD3D7633ABB5F4 /* Pods-demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296DAA348E593099ED80537AE6645B34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EFE78B1EFB8296848C43D9C9D76068 /* DispatchQueue+Throttle.swift in Sources */,
+				2B10D23ECBB2BBAAAF9D694EF414EF86 /* ReCaptcha.swift in Sources */,
+				4BF16612BED1EC4558D57A39B5B7FEC4 /* ReCaptcha_objc-dummy.m in Sources */,
+				467F8B15AC017D7D576CD9336E2D36C1 /* ReCaptchaDecoder.swift in Sources */,
+				7DE2BE0ED3AEA559DA9FDAB4D0FE0969 /* ReCaptchaError.swift in Sources */,
+				804D145E6D3EC434570CFBC565B5FC87 /* ReCaptchaResult.swift in Sources */,
+				88AEF9FEC0E9392B54F388787B39372E /* ReCaptchaWebViewManager.swift in Sources */,
+				741EA2791201EE834829549F14688BDE /* String+Dict.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE9FFC79B24588A48714630E91CF81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC5BFC46AB3730A6A70D695FC5D7A6 /* Pods-demo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A01DDCE77EBC2E6D096B3DE1E5AF6122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReCaptcha_objc;
+			target = 5DDECA165B57F3C5B8A2C1E7783A9ACC /* ReCaptcha_objc */;
+			targetProxy = CB498D0B55E256D13FD5A41B124E0B71 /* PBXContainerItemProxy */;
+		};
+		C83CE808350442415226EC10CE051C6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReCaptcha_objc-ReCaptcha_objc";
+			target = 84DCF4BBEABE6619A135A34DFE82BDC3 /* ReCaptcha_objc-ReCaptcha_objc */;
+			targetProxy = A0A2A13D74A16F6391321B8BFB7EA0BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
@@ -243,9 +473,25 @@
 			};
 			name = Debug;
 		};
-		32BE545F26DABC8AD37C5A8B201F92F2 /* Release */ = {
+		303BF45C04D7A4B3A0F01FEE02DD0FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D910C2571C7F5236190094652A691EA /* Pods-demo.release.xcconfig */;
+			baseConfigurationReference = B04A0B20F8C911B8B26EBE56735D8FD0 /* ReCaptcha_objc.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ReCaptcha_objc";
+				IBSC_MODULE = ReCaptcha_objc;
+				INFOPLIST_FILE = "Target Support Files/ReCaptcha_objc/ResourceBundle-ReCaptcha_objc-ReCaptcha_objc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ReCaptcha_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		45E4F54DB8281FEADA6F1E131EFC241C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6F28936150B774D174F70EC133595F /* Pods-demo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -275,18 +521,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		73AF675D423D913A08D4E1D271F2DA9E /* Debug */ = {
+		79B8B8AB31427F0542C8E859D1C61FC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AD2B169B8706766D1FCFF8268346190 /* Pods-demo.debug.xcconfig */;
+			baseConfigurationReference = B04A0B20F8C911B8B26EBE56735D8FD0 /* ReCaptcha_objc.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -295,23 +538,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-demo/Pods-demo-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ReCaptcha_objc/ReCaptcha_objc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReCaptcha_objc/ReCaptcha_objc-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-demo/Pods-demo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ReCaptcha_objc/ReCaptcha_objc.modulemap";
+				PRODUCT_MODULE_NAME = ReCaptcha_objc;
+				PRODUCT_NAME = ReCaptcha_objc;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -380,23 +622,130 @@
 			};
 			name = Release;
 		};
+		963E93734EC8F6FDB6135D6098F4EB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056C11651D9181CFD60992F50710A1E6 /* Pods-demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-demo/Pods-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-demo/Pods-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B35620B5561D183F4B4822F2DB2F2236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9E35868A6BB749F048C744401F16D2 /* ReCaptcha_objc.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ReCaptcha_objc";
+				IBSC_MODULE = ReCaptcha_objc;
+				INFOPLIST_FILE = "Target Support Files/ReCaptcha_objc/ResourceBundle-ReCaptcha_objc-ReCaptcha_objc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ReCaptcha_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F403AE161E7FF298C1C554A7CB601842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9E35868A6BB749F048C744401F16D2 /* ReCaptcha_objc.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReCaptcha_objc/ReCaptcha_objc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReCaptcha_objc/ReCaptcha_objc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReCaptcha_objc/ReCaptcha_objc.modulemap";
+				PRODUCT_MODULE_NAME = ReCaptcha_objc;
+				PRODUCT_NAME = ReCaptcha_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2236CD4C789E0BD24E613CD5B9C07C9E /* Build configuration list for PBXNativeTarget "Pods-demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				73AF675D423D913A08D4E1D271F2DA9E /* Debug */,
-				32BE545F26DABC8AD37C5A8B201F92F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
 				92A3E9AC052A7345115439021B218E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7C30685F48FCD88B1CE221880CDFB4 /* Build configuration list for PBXNativeTarget "ReCaptcha_objc-ReCaptcha_objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303BF45C04D7A4B3A0F01FEE02DD0FD6 /* Debug */,
+				B35620B5561D183F4B4822F2DB2F2236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9019CF26817DE8D1431CAF8B960B71 /* Build configuration list for PBXNativeTarget "Pods-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E4F54DB8281FEADA6F1E131EFC241C /* Debug */,
+				963E93734EC8F6FDB6135D6098F4EB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA681EF541A28D0F3AF9C280EE5A6325 /* Build configuration list for PBXNativeTarget "ReCaptcha_objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B8B8AB31427F0542C8E859D1C61FC6 /* Debug */,
+				F403AE161E7FF298C1C554A7CB601842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

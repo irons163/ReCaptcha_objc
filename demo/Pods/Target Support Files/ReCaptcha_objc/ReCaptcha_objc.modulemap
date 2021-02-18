@@ -1,0 +1,6 @@
+framework module ReCaptcha_objc {
+  umbrella header "ReCaptcha_objc-umbrella.h"
+
+  export *
+  module * { export * }
+}
