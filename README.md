@@ -1,16 +1,12 @@
 # ReCaptcha_objc
 
-[![Build Status](https://travis-ci.org/fjcaetano/ReCaptcha.svg?branch=master)](https://travis-ci.org/fjcaetano/ReCaptcha)
-[![codecov](https://codecov.io/gh/fjcaetano/ReCaptcha/branch/master/graph/badge.svg)](https://codecov.io/gh/fjcaetano/ReCaptcha)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/fjcaetano/ReCaptcha/pulls)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-orange.svg)](https://github.com/Carthage/Carthage)
-[![Version](https://img.shields.io/cocoapods/v/ReCaptcha.svg?style=flat)](http://cocoapods.org/pods/ReCaptcha)
-[![License](https://img.shields.io/cocoapods/l/ReCaptcha.svg?style=flat)](http://cocoapods.org/pods/ReCaptcha)
-[![Platform](https://img.shields.io/cocoapods/p/ReCaptcha.svg?style=flat)](http://cocoapods.org/pods/ReCaptcha)
+[![Version](https://img.shields.io/cocoapods/v/ReCaptcha_objc.svg?style=flat)](http://cocoapods.org/pods/ReCaptcha_objc)
+[![License](https://img.shields.io/cocoapods/l/ReCaptcha_objc.svg?style=flat)](http://cocoapods.org/pods/ReCaptcha_objc)
+[![Platform](https://img.shields.io/cocoapods/p/ReCaptcha_objc.svg?style=flat)](http://cocoapods.org/pods/ReCaptcha_objc)
 
 -----
 
-##### This project is an Objc version of [ReCaptcha](https://github.com/fjcaetano/ReCaptcha).
+#### This project is an Objc version of [ReCaptcha](https://github.com/fjcaetano/ReCaptcha).
 
 -----
 
@@ -34,23 +30,13 @@ result in a valid token.
 
 ## Installation
 
-ReCaptcha is available through [CocoaPods](http://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage).
+ReCaptcha_objc is available through [CocoaPods](http://cocoapods.org)
 To install it, simply add the following line to your dependencies file:
 
 #### Cocoapods
 ``` ruby
-pod "ReCaptcha"
-# or
-pod "ReCaptcha/RxSwift"
+pod "ReCaptcha_objc"
 ```
-
-#### Carthage
-``` ruby
-github "fjcaetano/ReCaptcha"
-```
-
-Carthage will create two different frameworks named `ReCaptcha` and `ReCaptcha_RxSwift`, the latter containing the RxSwift
-extension for the ReCaptcha framework.
 
 ## Usage
 
@@ -58,42 +44,35 @@ The reCAPTCHA keys can be specified as Info.plist keys or can be passed as param
 
 For the Info.plist configuration, add `ReCaptchaKey` and `ReCaptchaDomain` (with a protocol ex. http:// or https://) to your Info.plist and run:
 
-``` swift
-let recaptcha = try? ReCaptcha()
+``` objc
+ReCaptcha *recaptcha = [[ReCaptcha alloc] initWithApiKey:nil baseURL:nil endpoint:0 locale:nil error:nil];
 
-override func viewDidLoad() {
-    super.viewDidLoad()
+[recaptcha configureWebView:^(WKWebView * _Nonnull webview) {
+    self->webview = webview;
+    self->webview.frame = self.view.bounds;
+    self->webview.tag = webViewTag;
 
-    recaptcha?.configureWebView { [weak self] webview in
-        webview.frame = self?.view.bounds ?? CGRect.zero
-    }
-}
+    // For testing purposes
+    // If the webview requires presentation, this should work as a way of detecting the webview in UI tests
+    self->label = [[UILabel alloc] initWithFrame:self.view.bounds];
+    self->label.numberOfLines = 0;
+    self->label.tag = testLabelTag;
+    [self.view addSubview:self->label];
+}];
 
-
-func validate() {
-    recaptcha?.validate(on: view) { [weak self] (result: ReCaptchaResult) in
-        print(try? result.dematerialize())
-    }
-}
+dispatch_async(dispatch_get_main_queue(), ^{
+    [self->recaptcha validateOn:nil resetOnError:YES completion:^(NSString * _Nonnull result) {
+        [self->webview removeFromSuperview];
+        self->label.text = result;
+        NSLog(@"Result:%@", result);
+    }];
+});
 ```
 
 If instead you prefer to keep the information out of the Info.plist, you can use:
-``` swift
-let recaptcha = try? ReCaptcha(
-    apiKey: "YOUR_RECAPTCHA_KEY", 
-    baseURL: URL(string: "YOUR_RECAPTCHA_DOMAIN")!
-)
-
+``` objc
+ReCaptcha *recaptcha = [[ReCaptcha alloc] initWithApiKey:"YOUR_RECAPTCHA_KEY" baseURL:"YOUR_RECAPTCHA_DOMAIN" endpoint:0 locale:nil error:nil];
 ...
-```
-
-You can also install the reactive subpod and use it with RxSwift:
-
-``` swift
-recaptcha.rx.validate(on: view)
-    .subscribe(onNext: { (token: String) in
-        // Do something
-    })
 ```
 
 #### Alternte endpoint
@@ -114,8 +93,6 @@ let recaptcha = try? ReCaptcha(endpoint: .alternate) // Defaults to `default` wh
 Do you love ReCaptcha and work actively on apps that use it? We'd love if you could help us keep improving it!
 Feel free to message us or to start contributing right away!
 
-## [Full Documentation](http://fjcaetano.github.io/ReCaptcha)
-
 ## License
 
-ReCaptcha is available under the MIT license. See the LICENSE file for more info.
+ReCaptcha/ReCaptcha_objc is available under the MIT license. See the LICENSE file for more info.
