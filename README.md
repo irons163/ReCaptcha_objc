@@ -45,7 +45,7 @@ The reCAPTCHA keys can be specified as Info.plist keys or can be passed as param
 For the Info.plist configuration, add `ReCaptchaKey` and `ReCaptchaDomain` (with a protocol ex. http:// or https://) to your Info.plist and run:
 
 ``` objc
-ReCaptcha *recaptcha = [[ReCaptcha alloc] initWithApiKey:nil baseURL:nil endpoint:0 locale:nil error:nil];
+ReCaptcha *recaptcha = [[ReCaptcha alloc] initWithApiKey:nil baseURL:nil endpoint:EndpointDefault locale:nil error:nil];
 
 [recaptcha configureWebView:^(WKWebView * _Nonnull webview) {
     self->webview = webview;
@@ -71,7 +71,7 @@ dispatch_async(dispatch_get_main_queue(), ^{
 
 If instead you prefer to keep the information out of the Info.plist, you can use:
 ``` objc
-ReCaptcha *recaptcha = [[ReCaptcha alloc] initWithApiKey:"YOUR_RECAPTCHA_KEY" baseURL:"YOUR_RECAPTCHA_DOMAIN" endpoint:0 locale:nil error:nil];
+ReCaptcha *recaptcha = [[ReCaptcha alloc] initWithApiKey:"YOUR_RECAPTCHA_KEY" baseURL:"YOUR_RECAPTCHA_DOMAIN" endpoint:EndpointDefault locale:nil error:nil];
 ...
 ```
 
@@ -80,12 +80,16 @@ ReCaptcha *recaptcha = [[ReCaptcha alloc] initWithApiKey:"YOUR_RECAPTCHA_KEY" ba
 If your app has firewall limitations that may be blocking Google's API, the JS endpoint may be changed on initialization.
 It'll then point to `https://www.recaptcha.net/recaptcha/api.js`:
 
-``` swift
-public enum Endpoint {
-    case default, alternate
-}
+``` objc
+typedef SWIFT_ENUM(NSInteger, Endpoint, closed) {
+/// Google’s default endpoint. Points to
+/// https://www.google.com/recaptcha/api.js
+  EndpointDefault = 0,
+/// Alternate endpoint. Points to https://www.recaptcha.net/recaptcha/api.js
+  EndpointAlternate = 1,
+};
 
-let recaptcha = try? ReCaptcha(endpoint: .alternate) // Defaults to `default` when unset
+ReCaptcha *recaptcha = [[ReCaptcha alloc] initWithApiKey:"YOUR_RECAPTCHA_KEY" baseURL:"YOUR_RECAPTCHA_DOMAIN" endpoint:EndpointAlternate locale:nil error:nil];
 ```
 
 ## Help Wanted
